@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import "../css//Die.css";
 
-class Die extends Component {
-  render() {
-    return (
-      <span className="Die">
-        <i
-          style={{ color: this.props.colour }}
-          className={`Die-icon fas fa-dice-${this.props.num}`}></i>
-      </span>
-    );
-  }
-}
+const Die = (props) => {
+  return (
+    <span className="Die">
+      <i
+        style={{ color: props.colour }}
+        className={`Die-icon fas fa-dice-${props.num} ${props.rolling && "Die-rolling"}`}></i>
+    </span>
+  );
+};
 
 export default Die;

@@ -1,4 +1,31 @@
 .Die-icon {
-   font-size: 150px;
-   margin: 30px;
+  font-size: 150px;
+  margin: 30px;
+}
+
+.Die-rolling {
+  animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-5px, -5px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-10px, 5px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(8px, 0, 0);
+  }
 }

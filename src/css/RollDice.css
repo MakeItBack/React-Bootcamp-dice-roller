@@ -1,11 +1,20 @@
-button {
+.RollDice-main-heading {
+  font-size: 50px;
+  color: azure;
+}
+
+.RollDice-button {
   border: none;
   margin: 20px;
   border-radius: 10px;
   padding: 20px 60px;
-  background-color: darkslateblue;
   color: white;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.RollDice-button:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
 }
