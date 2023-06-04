@@ -1,6 +1,6 @@
 import React from "react";
 import Die from "./Die";
-import "./RollDice.css";
+import "../css/RollDice.css";
 
 class RollDice extends React.Component {
   constructor(props) {
