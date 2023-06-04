@@ -28,12 +28,15 @@ class RollDice extends React.Component {
 
   roll(event) {
     this.setState({ rolling: true });
+    const audio = new Audio("rolling_sound.wav");
+    audio.play();
     setTimeout(() => {
       for (const die of this.dies) {
         let index = Math.floor(Math.random() * 6);
         this.setState({ [die]: this.faces[index].num });
       }
       this.setState({ rolling: false });
+      audio.pause();
     }, 2000);
   }
 
